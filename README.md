@@ -196,9 +196,6 @@ We reserve the right to update these conditions at any time, please check back p
 * [Nebula (Create Distribution.json)][nebula]
 * [v2 Rewrite Branch (WIP)][v2branch]
 
-The best way to contact the developers is on Discord.
-
-[![discord](https://discordapp.com/api/guilds/211524927831015424/embed.png?style=banner3)][discord]
 
 ---
 
@@ -210,7 +207,6 @@ The best way to contact the developers is on Discord.
 [mainprocess]: https://electronjs.org/docs/tutorial/application-architecture#main-and-renderer-processes 'Main Process'
 [rendererprocess]: https://electronjs.org/docs/tutorial/application-architecture#main-and-renderer-processes 'Renderer Process'
 [chromedebugger]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome 'Debugger for Chrome'
-[discord]: https://discord.gg/zNWUXdt 'Discord'
-[wiki]: https://github.com/dscalzi/HeliosLauncher/wiki 'wiki'
-[nebula]: https://github.com/dscalzi/Nebula 'dscalzi/Nebula'
-[v2branch]: https://github.com/dscalzi/HeliosLauncher/tree/ts-refactor 'v2 branch'
+[wiki]: https://github.com/Kodalen/KodalenLauncher/wiki 'wiki'
+[nebula]: https://github.com/Kodalen/Nebula 'Kodalen/Nebula'
+[v2branch]: https://github.com/Kodalen/KodalenLauncher/tree/ts-refactor 'v2 branch'
