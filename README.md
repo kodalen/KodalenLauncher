@@ -1,15 +1,15 @@
 <p align="center"><img src="./app/assets/images/SealCircle.png" width="150px" height="150px" alt="aventium softworks"></p>
 
-<h1 align="center">Helios Launcher</h1>
+<h1 align="center">Kodalen Launcher</h1>
 
 <em><h5 align="center">(formerly Electron Launcher)</h5></em>
 
-[<p align="center"><img src="https://img.shields.io/travis/dscalzi/HeliosLauncher.svg?style=for-the-badge" alt="travis">](https://travis-ci.org/dscalzi/HeliosLauncher) [<img src="https://img.shields.io/github/downloads/dscalzi/HeliosLauncher/total.svg?style=for-the-badge" alt="downloads">](https://github.com/dscalzi/HeliosLauncher/releases) <img src="https://forthebadge.com/images/badges/winter-is-coming.svg"  height="28px" alt="stark"></p>
+[<p align="center"><img src="https://img.shields.io/travis/Kodalen/KodalenLauncher.svg?style=for-the-badge" alt="travis">](https://img.shields.io/travis/Kodalen/KodalenLauncher) [<img src="https://img.shields.io/github/downloads/Kodalen/KodalenLauncher/total.svg?style=for-the-badge" alt="downloads">](https://github.com/Kodalen/KodalenLauncher/releases)</p>
 
 <p align="center">Join modded servers without worrying about installing Java, Forge, or other mods. We'll handle that for you.</p>
 
-![Screenshot 1](https://i.imgur.com/6o7SmH6.png)
-![Screenshot 2](https://i.imgur.com/x3B34n1.png)
+![Screenshot 1](https://i.imgur.com/KoQQcug.jpg)
+![Screenshot 2](https://i.imgur.com/8j45nEU.png)
 
 ## Features
 
@@ -38,24 +38,24 @@ This is not an exhaustive list. Download and install the launcher to gauge all i
 
 ## Downloads
 
-You can download from [GitHub Releases](https://github.com/dscalzi/HeliosLauncher/releases)
+You can download from [GitHub Releases](https://github.com/Kodalen/KodalenLauncher/releases)
 
 #### Latest Release
 
-[![](https://img.shields.io/github/release/dscalzi/HeliosLauncher.svg?style=flat-square)](https://github.com/dscalzi/HeliosLauncher/releases/latest)
+[![](https://img.shields.io/github/release/Kodalen/KodalenLauncher.svg?style=flat-square)](https://github.com/Kodalen/KodalenLauncher/releases/latest)
 
 #### Latest Pre-Release
-[![](https://img.shields.io/github/release/dscalzi/HeliosLauncher/all.svg?style=flat-square)](https://github.com/dscalzi/HeliosLauncher/releases)
+[![](https://img.shields.io/github/release/Kodalen/KodalenLauncher/all.svg?style=flat-square)](https://github.com/Kodalen/KodalenLauncher/releases)
 
 **Supported Platforms**
 
-If you download from the [Releases](https://github.com/dscalzi/HeliosLauncher/releases) tab, select the installer for your system.
+If you download from the [Releases](https://github.com/Kodalen/KodalenLauncher/releases) tab, select the installer for your system.
 
 | Platform | File |
 | -------- | ---- |
-| Windows x64 | `helioslauncher-setup-VERSION.exe` |
-| macOS | `helioslauncher-VERSION.dmg` |
-| Linux x64 | `helioslauncher-VERSION-x86_64.AppImage` |
+| Windows x64 | `kodalenlauncher-setup-VERSION.exe` |
+| macOS | `kodalenlauncher-VERSION.dmg` |
+| Linux x64 | `kodalenlauncher-VERSION-x86_64.AppImage` |
 
 ## Console
 
@@ -87,8 +87,8 @@ If you want to export the console output, simply right click anywhere on the con
 **Clone and Install Dependencies**
 
 ```console
-> git clone https://github.com/dscalzi/HeliosLauncher.git
-> cd HeliosLauncher
+> git clone https://github.com/Kodalen/KodalenLauncher.git
+> cd KodalenLauncher
 > npm install
 ```
 
@@ -137,9 +137,13 @@ Paste the following into `.vscode/launch.json`
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "program": "${workspaceFolder}/node_modules/electron/cli.js",
-      "args" : ["."],
-      "outputCapture": "std"
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+      "windows": {
+        "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd"
+      },
+      "args": ["."],
+      "console": "integratedTerminal",
+      "protocol": "inspector"
     },
     {
       "name": "Debug Renderer Process",
